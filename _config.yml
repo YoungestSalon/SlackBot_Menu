@@ -101,7 +101,7 @@ analytics:
 # Site Author
 author:
   name             : "Eun-Ji Lee"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/images/profile_character.jpg"
   bio              : "Data Science Portfolio"
   location         : "Seongnam-si, Gyunggi-do, South Korea"
   email            : "youngestsalon@gmail.com"
