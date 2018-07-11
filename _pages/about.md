@@ -1,9 +1,9 @@
------
+---
 title: "About"
-permalinks: /about/
+permalink: /about/
 header:
   image: "/images/1.jpg"
------
+---
 
 데이터 사이언티스트가 되기 위해 공부하고 있습니다.
 데잇걸즈 2기에 참여중입니다.
