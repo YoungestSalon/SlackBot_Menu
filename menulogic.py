@@ -11,7 +11,7 @@ def reply(text):
     Europian = '파스타', '피자', '샐러드', '빵', '수프', '샌드위치', '햄버거'
     undefined = '쌀국수', '편의점 도시락', '아무거나...'
     alcohol = '소주', '맥주', '소맥', '폭탄주', '고량주', '와인', '사케', '막걸리', '동동주'
-    snack_for_Alcohol = '삼겹살', '치킨', '보쌈', '족발', '피자', '양꼬치', '곱창/막창', '감자튀김', '김치전'
+    snack_for_alcohol = '삼겹살', '치킨', '보쌈', '족발', '피자', '양꼬치', '곱창/막창', '감자튀김', '김치전'
     snack = '빵', '과자', '케이크', '마카롱', '초콜릿', '파이', '파이썬(뭐라구?)'
     drink = '커피', '홍차', '녹차', '주스', '에이드', '밀크티', '버블티', '낮술(응?)'
     delivery = '호토모토', '서브웨이', '프레시코드', '핫베어케밥김밥', '메뉴 추가해 주세요ㅠㅠ'
@@ -27,15 +27,70 @@ def reply(text):
     Blue = '파이에 햇볕을 쬐면... 파이썬.'
     CM = '(웃으면서)여러분~ 출석체크 시작할게요'
     Anne = '(떨리는 목소리로) 제가 지금 엄청 긴장이 되는데요...'
-    Youngestsalon = '저는 마이크 안쓰고 발표할게요'
 
-    if "막내살롱" in text:
-        return "브런치 작가입니다."
-    elif "주사위" == text:
-        die = str(random.randint(1,6))
-        return "주사위를 던졌더니" + die + " 나왔다."
-    elif "점심메뉴" in text:
+    if "점심메뉴" in text:
         menu = str(random.choice(lunch_menu))
         return menu
+    elif "저녁메뉴" in text:
+        menu = str(random.choice(dinner_menu))
+        return menu
+    elif "분식메뉴" in text:
+        menu = str(random.choice(Korean_snack))
+        return menu
+    elif "한식메뉴" in text:
+        menu = str(random.choice(Korean))
+        return menu
+    elif "일식메뉴" in text:
+        menu = str(random.choice(Japanese))
+        return menu
+    elif "중식메뉴" in text:
+        menu = str(random.choice(Chinese))
+        return menu
+    elif "양식메뉴" in text:
+        menu = str(random.choice(Europian))
+        return menu
+    elif "기타메뉴" in text:
+        menu = str(random.choice(undefined))
+        return menu
+    elif "술메뉴" in text:
+        menu = str(random.choice(alcohol))
+        return menu
+    elif "안주메뉴" in text:
+        menu = str(random.choice(snack_for_alcohol))
+        return menu
+    elif "간식메뉴" in text:
+        menu = str(random.choice(snack))
+        return menu
+    elif "음료메뉴" in text:
+        menu = str(random.choice(drink))
+        return menu
+    elif "배달메뉴" in text:
+        menu = str(random.choice(delivery))
+        return menu
+    elif "식당메뉴" in text:
+        menu = str(random.choice(store))
+        return menu
+
+    elif "격려" in text:
+        word = str(random.choice(cheer_up))
+        return word
+
+    elif "애란선생님" in text:
+        return Alan
+    elif "배로선생님" in text:
+        return Joeun
+    elif "지해선생님" in text:
+        return Zzae
+    elif "지현선생님" in text:
+        return Jihyun
+    elif "TC은정님" in text:
+        return TC
+    elif "블루님" in text:
+        return Blue
+    elif "CM성윤님" in text:
+        return CM
+    elif "Anne님" in text:
+        return Anne
+
     else:
         return None
